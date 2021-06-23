@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marvel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        html {
+            font-size: 5px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #main {
+            background: url("imgs/grunge-6097778_1280.jpg");
+            height: 600px;
+            background-attachment: fixed;
+        }
+
+        .nav {
+            text-decoration: none;
+            font-size: 5rem;
+            color: white;
+            transition: ease-in-out;
+            font-family: 'Athiti';
+        }
+
+        .nav:hover {
+            font-size: 6rem;
+
+        }
+
+        #navbar {
+            display: flex;
+            margin-top: 0px;
+            animation-name: onload;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            background-color: #4c4141;
+        }
+
+        .content {
+            margin: 15px;
+            list-style-type: none;
+        }
+
+        #logo {
+            margin-top: 70px;
+            animation-name: onload;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #lo {
+            border: white solid;
+            border-radius: 150px;
+
+        }
+
+        #name {
+            font-size: 7rem;
+            color: white;
+            margin-top: 10px;
+            animation-name: onload;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'KoHo';
+
+        }
+
+        @keyframes onload {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        #notes {
+            background: linear-gradient(to bottom right, rgb(243, 243, 243), rgb(197, 197, 197));
+
+
+        }
+
+        #head {
+            font-size: 8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Orbitron';
+
+        }
+
+        #head2 {
+            font-size: 8rem;
+            margin-top: 20px;
+            margin-left: 10px;
+            font-family: 'Pathway Gothic One';
+        }
+
+        #first {
+            margin-top: 20px
+        }
+
+        #second {
+            margin-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .ch {
+            font-size: 6rem;
+            font-family: 'Josefin Slab';
+            margin-left: 10px;
+            font-weight: 900;
+        }
+
+        .btn {
+            margin-left: 5px;
+        }
+
+        .but {
+            margin-top: 20px;
+
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border-radius: 11px;
+            text-decoration: rgb(14, 13, 13);
+            ;
+            cursor: pointer;
+            background-color: rgba(255, 255, 240, 0);
+            transition: ease-in-out;
+            font-family: 'Rajdhani';
+            font-size: 4rem;
+        }
+
+        .but:hover {
+
+            background-color: black;
+            color: White;
+            padding-left: 65px;
+            padding-right: 65px;
+        }
+
+        .hb {
+            margin-top: 20px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            background-color: rgba(255, 255, 240, 0);
+            cursor: pointer;
+            border-radius: 11px;
+            text-decoration: rgb(14, 13, 13);
+            transition: ease-in-out;
+            font-family: 'Rajdhani';
+            font-size: 4rem;
+        }
+
+        .hb:hover {
+            padding-left: 65px;
+            padding-right: 65px;
+            background-color: black;
+            color: White;
+
+        }
+
+        #ch1 {
+            display: none;
+            font-size: 4rem;
+            margin-left: 10px;
+            font-family: 'Lexend';
+            font-weight: 300;
+        }
+
+        #ch2 {
+            display: none;
+            font-size: 4rem;
+            margin-left: 10px;
+            font-family: 'Lexend';
+            font-weight: 300;
+        }
+
+        #books {
+            background: url("imgs/rm27-ning-30-background.jpg");
+            background-attachment: fixed;
+            height: 800px;
+        }
+
+        #h {
+            font-size: 8rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 20px;
+            font-family: 'Montserrat';
+        }
+
+        #bname {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .bookname {
+            font-size: 5rem;
+            color: white;
+            font-family: 'Dosis';
+        }
+
+        #TS {
+            position: relative;
+            top: 400px;
+
+
+
+            background: #2f2f63;
+            padding: 50px;
+            border-radius: 93px;
+        }
+
+        #dk {
+            position: relative;
+            top: 200px;
+
+
+
+            background: #2f2f63;
+            padding: 50px;
+            border-radius: 93px;
+        }
+
+        #arya {
+            position: relative;
+            top: 410px;
+
+
+
+            background: #2f2f63;
+            padding: 50px;
+            border-radius: 93px;
+        }
+
+        #sp {
+            position: relative;
+            top: 270px;
+
+
+
+            background: #2f2f63;
+            padding: 50px;
+            border-radius: 93px;
+        }
+
+#bt{
+    margin-left: 10px;
+}
+#video{
+    background: linear-gradient(rgba(190, 187, 187, 0), rgb(93, 66 ,75)),url("imgs/texture-990088_1280.jpg");
+    background-attachment: fixed;
+    color: white;
+    
+}
+.buto{
+    padding-bottom: 10px;
+    font-family: 'Gruppo';
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+   
+    background-color: #673f3f;
+    color:white;
+}
+.buto:hover{
+    background-color: black;
+    color:white;
+   
+}
+#firsto{
+    font-size: 6rem;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+.aaa{
+    font-family: 'Arima Madurai';
+
+}
+#vidh{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 9rem;
+    padding-top: 10px;
+    font-family: 'Exo';
+}
+#firstvideos{
+    display: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.vid{
+    margin: 13px;
+    border-radius: 10px;
+}
+.contentv{
+    font-size: 6rem;
+    position: relative;
+    top: 88px;
+    font-family: 'Marvel';
+}
+
+#seco{
+    font-size: 6rem;
+    margin-left: 10px;
+    padding-bottom: 20px;
+
+}
+#firstvideos2{
+    display: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+footer{
+    position: relative;
+    font-size: 5rem;
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: black 2px solid;
+    height: 50px;
+    color: #a9a9a9;
+    background-color: #2d2d2d;
+}
+        @media only screen and (max-width: 330px) {
+            #navbar {
+                display: none;
+            }
+
+            #logo {
+                margin-top: 0px
+            }
+
+            html {
+                font-size: 3px;
+            }
+        }
+    </style>
+    <section id="main">
+        <header>
+            <ul id="navbar">
+                <a href="#notes" class="nav">
+                    <li class="content">Notes</li>
+                </a>
+                <a href="#books" class="nav">
+                    <li class="content">Books</li>
+                </a>
+                <a href="#video" class="nav">
+                    <li class="content">Videos</li>
+                </a>
+            </ul>
+        </header>
+        <hr>
+        <div id="logo">
+            <img src="imgs/df68f516c88c4d908beb7e58b1dc4e4b.png" alt="pic" id="lo">
+        </div>
+        <span id="name">
+            ACCOUNTANCY
+        </span>
+    </section>
+
+    <section id="notes">
+        <div id="head">
+            Notes
+        </div>
+        <div id="head2">
+            Chapters
+        </div>
+        <div id="first">
+            <span class="ch">
+                Partnership Fundamentals
+            </span>
+            <br>
+            <span class="btn">
+                <button type="button" class="but" id="bn" ><b>View</b></button>
+            </span>
+            <span class="btn">
+                <button type="button" class="hb" id="hide1" onclick="Hide()"><b>Hide</b></button>
+            </span>
+            <p id="ch1">
+                <b>According to Section -4 of the Indian Partnership Act, 1932:<br>
+                    “Partnership is the relations between two or more persons who have agreed to share the profits of a business carried on by all or any one of them acting for all”<br></b>
+                    <br><br>
+                    <b>Features of Partnership<br></b>
+                    <br>
+                    <i>1. Two or more persons:</i> There must be at least two persons to form a valid partnership. The maximum number of partners cannot exceed the number of partners prescribed by Companies Act, 2013 which is 50 in any business whether banking or non- banking.<br>
+                    <br>																			
+                    <i>2. Agreement:</i> Partnership comes into existence by an agreement (either written or oral among the partners. The written agreement among the partners is called Partnership Deed.<br>
+                    <br>
+                    
+                     
+                    
+                    <i>3. Existence of business and profit motive: </i>A partnership can be formed for the purpose of carrying on legal business with the intention of earning profits. A joint ownership of some property by itself cannot be called a partnership.<br>
+                    <br>
+                     
+                    
+                    <i>4. Sharing of Profits:</i> An agreement between the partners must be aimed at sharing the profits. If some persons join hands to run some charitable activity, it will not be called partnership. Futher, if a partner is deprived of his right to share the profits of the business, he cannot be called as partner.<br>
+                    <br>
+                     
+                    
+                    <i>5. Buiness carried on by all or any of them acting for all: </i>It means that each partner can participate in the conduct of business and each partner is bound by the acts of other partners in respect to the business of the firm.<br>
+                    <br>
+                     
+                    
+                    <i>6. Relationship of Principal and Agent: </i>Each partner is an agent ad well as a partner of the firm. An agent, because he can bind the other partners by his acts and principal, because he himself can be bound by the acts of the other partners.<br>
+                    <br>
+                    <br>
+                    <b><u>Partnership Deed</b></u>
+                    <br>
+                    Since partnership is the outcome of an agreement, it is essential that there must be some terms and conditions agreed upon by all the partners. Such terms and conditions mat be either written or oral. The law does not make it compulsory to have a written agreement. However, in order to avoid all misunderstandings and disputes, it is always the best course to have a written agreement duly signed and registered under the Act.<br>
+                    <br>
+                    The partnership deed is a written agreement among the partners which contains the terms of agreement. It is also called ‘ Articles of Partnership’. A partnership deed should contain the following points:<br>
+                    <br>
+                    <b>Name and address of the firm as well as partners.<br>
+                    Name and addresses of the partners.<br>
+                    Nature and place of the business.<br>
+                    Duration, if any of partnership.<br>
+                    Capital contribution by each partner.<br>
+                    Interest on capital.<br>
+                    Drawings and interest on drawings.<br>
+                    Profit sharing ratio.<br>
+                    Interest on loan.<br>
+                    Partner’s Salary/commission etc.<br>
+                    Method for valuation of goodwill and assets<br>.
+                    Accounting period of the firm and duration of partnership<br>
+                    Rights and duties of partners how disputes will be settled.<br>
+                    Decisions taken if some partner becomes insolvent.<br>
+                    Opening of Bank Account – whereas it will be in the name of firm or partners.<br>
+                    Rules to be followed in case of admission & Settlement of accounts or retirement or death of partner.<br>
+                    Revaluation of assets & liabilities, if any to be done.<br>
+                    Method of recording of firm’s accounts<br>
+                    Auditing<br>
+                    Date of commencement of partnership<br></b>
+                    <br>
+                    <br>
+                    <b><u>Benefits of Partnership Deed<br></b></u>
+                    <br>
+                    (1) It regulates the rights, duties and liabilites of each partner.<br>
+                    (2) It helps to avoid any misunderstanding amongst the partners because all the terms and conditins of partnership have been laid down beforehand in the deed.<br>
+                    (3) Any dispute amongst the partners may be settled easily as the partnership deed may be readiy referred to.<br>
+                    Hence, it is always best course to have a written partnership deed duly signed by all the partners and registered under the Act.<br>
+                    
+                    <b><u>Rules applicable in the absence of partnership deed<br></b></u>
+                    <br>
+                    Profit sharing Ratio	Equal, Irrespective of capital contribution.<br>
+                    Interest on Capital	No Interest on Capital is to be allowed to any Partner<br>
+                    Interest on Drawings	No interest on Drawings is to be charged to any partner<br>
+                    Salary or Commission to a Partner	Not allowed to any partner<br>
+                    Interest on loan by a Partner	Interest is allowed @ 6% per annum.<br>
+                    Distribution of Profits among Partners<br>
+                    <br>
+                    <br>
+                    Transactiions of the partnerhsip firm are recorded according to the principles of Double-entry book keeping system, and as in the case of a sole proprietorship concern a partnership firm will also prepare Trading account, Profit & Loss account and Balance Sheet at the end of every year. The only difference between accounting of a sole trader and partnership firm is that the profits of the partnership firm ar divided amongst the partners.<br>
+                    A Profit and Loss Appropriation Account is prepared to show the distribution of profits among partners as per the provision of Partnership Deed (or as per the provision of Indian Partnership Act, 1932 in the absence of Partnership Deed). It is an extension of profit and Loss Account. It is nominal account. It records entries for interest on capital, Interest on Drawings, Salary to the partner, and division of profits among the partners.<br>
+                    <br>
+                    <b>The Journal Entries regarding Profit and Loss Appropriation Account are as follows:<br></b>
+                    <br>
+                    <i>1.For transfer of balance of Profit and Loss Account<br></i>
+                    Profit and Loss A/cDr.<br>
+                    To Profit and Loss Appropriation A/c<br>
+                    <b>2.For Interest on Capital<br></b>
+                    <br>
+                    <i>For allowing Interest on capital<br></i>
+                    1. Interest on Capital A/c<br>
+                    To Partner’s Capital/Current A/cs<br>
+                    (Being interest on capital allowed @ % p.a.)<br>
+                    <br>
+                    <i>2. For transferring Interest on Capital to p&L appropriation A/c.<br></i>
+                    Profit and Loss Appropriation A/cDr.<br>
+                    To Interest on Capital A/c.<br>
+                    (Being interest on capital transferred to p&L Appropriation A/c)<br>
+                    <br>
+                    <b>3. For Salary or Commission payable to a partner<br></b>
+                    <i>i. For allowing Salary or Commission to a partner:<br></i>
+                    Partners Salary/Commission A/cDr.<br>
+                    To Partner’s Capital/Current A/cs<br>
+                    (Being salary/commission payable to a partner)<br>
+                    <br>
+                    <i>ii. For transferring Partner’s Salary/Commission A/c to Profit and Loss<br></i>
+                    Appropriation A/s:<br>
+                    Profit and Loss Appropriation A/cDr.<br>
+                    To Partner’s Salary/Commission A/c<br>
+                    <br>
+                    <i>4. For transfer of Reserves:<br></i>
+                    Profit and Loss Appropriation A/cDr.<br>
+                    To Reserve A/c<br>
+                    (Being reserve created)<br>
+                    <br>
+                    <b>5. For Interest on Drawings:<br></b>
+                    <br>
+                    <i>1.For charging interest on a partner’s drawings:<br></i>
+                    Partner’s Capital/Current A/c.Dr.<br>
+                    To Interest on Drawings A/c<br>
+                    (Being interest on drawings charged @ % p.a.)<br>
+                    <br>
+                    <i>2. For transferring interest on drawings to Profit and Loss Appropriation A/c<br></i>
+                    Interest on Drawings A/cDr.<br>
+                    To Profit and Loss Appropriation A/c<br>
+                    (Being interest on drawings transferred to P&L appropriation A/c)<br>
+                    <br>
+                    <i>6. For transfer to Profit (i.e. Credit Balance of Profit and Loss Appropriation Account<br></i>
+                    Profit and Loss Appropriation A/cDr.<br>
+                    To Partners Capital/Current A/cs<br>
+                    (Being profits distributed among partners)<br>
+            </p>
+        </div>
+        <hr>
+        <div id="second">
+            <span class="ch">
+                Goodwill Nature and Valuation
+            </span>
+            <br>
+            <span class="btn">
+                <button type="button" class="but" id="bn2" onclick="viewt()"><b>View</b></button>
+            </span>
+            <span class="btn">
+                <button type="button" class="hb" id="hide2" onclick="Hidet()"><b>Hide</b></button>
+            </span>
+            <p id="ch2">
+                <b><i>Goodwill is good name or the reputaion of the business, which is earned by a firm through the hardwork and honesty of its owners. If a firm renders good service to the customers, the customers who feel satisfied will come again and aain and the firm will be able to earn more profits in future.<br>
+                    Thus, goodwill is the value of the reputaion of a firm which enables it to earn higher profits in comparison to the normal profits earned by other firms in the same trade.<br></b></i>
+                    <br><b>Features of Goodwill<br></b><br>
+                    1. It is an intangible asset: Goodwill cannot be seen or touched, it does not have any physical existence, thus it belongs to the category of intangible assets such as patents, trademarks, copyrights, etc.<br>
+                    2. It is a valuable asset<br>
+                    3. It is helpful in earning excess profits.<br>
+                    4. Its value is liable to constant fluctuations: While goodwill does not depreciate, its value is liable to constant fluctuation, its vlaue is liable to constant fluctuations.It is always present as a silent asset in a business where there are super profits (i.e.more than the normal) but declines in value with the decline in earnings.
+                    5. It is valuable only when entire business is sold: Goodwill cannot be sold in part. It can be sold with the entire business only. The only exception is at the time of admission or retirement of the partner.<br>
+                    6. It is difficult to place an exact value on goodwill: This is beecause its value may fluctuate from time to time due to changing circumsatnces which are internat and external to business.<br>
+                    <br><br><b>Goodwill is divided into two categories.<br></b><br>
+                    <i>I. Purchased Goodwill:</i> Purchased goodwill means goodwill for which a consideration has been paid e.g. when business is purchased the excess of purchase consideration of its net assets i.e. (Assets – Liabilities) is the Purchased Goodwill. It is separately recorded in the books because as it is purchased by paying in form of cash or kind.
+                    <br><i>Characteristics<br></i><br>
+                    (i) It arises on purchase of a business or brand.<br><br>
+                    (ii) Consideration is paid for it so it is recorded in books.<br><br>
+                    (iii) Shown in balance sheet as on asset.<br><br>
+                    (iv) It is amortised (depreciated).<br><br>
+                    (v) Value is a subjective judgment & ascertained by agreement of seller & purchaser. It is approximate value and cannot be sold separately in the market or in parts.<br><br><br>
+                    <i>II. Self-generated Goodwill</i> also called as inherent goodwill. It is an internally generated goodwill which arises from a number of factors that a running business possesses due to which it is able to earn more profits in the future.<br>
+                    <br><i>Features<br></i><br><br>
+                    (i) It is generated internally over the years.<br><br>
+                    (ii) A true cost cannot be placed on this type of goodwill.<br><br>
+                    (iii) Value depends on subjective judgment of the value.<br><br>
+                    (iv) As per Accounting Standard 26( Intangible Asset), it is not recorded in the books of accounts because consideration in money or money’s worth has not be paid for it.<br><br><br>
+                    <b>Factors Affecting the Value of Goodwill<br></b><br>
+                    <br><i>1. Efficient management:</i> If the business is run by experienced and efficient management, its profits will go on increasing, which results in increase in the value of goodwill.<br>
+                    <br><i>2. Quality of products: </i>If the firm is suppyong good quality of products, then the customer will come again and again for the same and thus will create the goodwill and brand name for the same.<br>
+                    <br><i>3. Location of business: </i>If the business is located at a convenient or prominent place, it will atract more customers and therefore will have more goodwill.<br>
+                    <br><i>4. The Longevity of the business: </i>An older business is better known to its customers, therefore it is likely to have more goodwill. When a business enterprise has built up good repuation over a period of time, the number of customers will be more in comparison to the customers of new entrants. Number of customers is an indicator of profit earning capacity of a business.
+                    <br><i>5. Monopolistic and other Rights: </i>If a buiness enjoys monopoly market, it will have assured profits. Similarly, if it holds some special rights such as patents, trade marks, copyrights or concessions, etc, it will have more goodwill.<br>
+                    <br><b>6. Other factors:<br></b><br><br>
+                    <i>(i) Good industrial relations.<br><br>
+                    (ii) Favourable Government regulations<br><br>
+                    (iii) Stable political conditions<br><br>
+                    (iv) Research and development efforts<br><br>
+                    (v) Effective advertising to establish brand popularity<br><br>
+                    (vi) Popularity of product in terms of quality.<br></i><br><br>
+                    <b>Need for Valuing Goodwill: </b>Whenever the mutual rights of the partners changes the party which makes a sacrifice must be compensated. This basis of compensation is goodwill so we need to calculate goodwill.<br>
+                    <b>Mutual rights change under following circumstances<br></b><br>
+                    1. When profit sharing ratio changes<br>
+                    2. On admission of a partner<br>
+                    3. On Retirement or death of a partner<br>
+                    4. When amalgamation of two firms taken place<br>
+                    5. when partnership firm is sold.<br><br><br>
+                    <b>Method of valuation of goodwill :<br></b><br>
+                    It is very difficult to assess the value of goodwill, as it is an intangible asset. In case of sale of a business, its value depends on the mutual agreement between the seller and the purchaser of the business. Usually, there are three methods of valuing goodwill:<br>
+                    1. average profit method<br>
+                    2. Super profit method<br>
+                    3. Capitalization method<br><br>
+                    <b>Average Profit Method<br></b><br>
+                    This is a very simple and widely followed method of valuation of goodwill. In this method, goodwill is calculated on the basis of the number of past years years. Average of such profits is multiplied by the agreed number of years (such as two or three) to find out the value of goodwill.<br>
+                    <b>Formula for calculation of goodwill<br></b><br>
+                    <i>Goodwill = Average Profits × Number of years of purchase<br>v
+                    Number of years of purchase means for how many years the firm will earn the same amount of profits in future.<br><br>
+                    Average Profits = Total Profits/Number of years<br></i><br>
+                    A buyer always wants to estimate the future profits of a business. Future profits depend upon the average performance of the business in the past. Past profits indicate as to what profitsare likely to accrue in the future. Therefore the past profits are averaged. But before calculating the average profits, the profits earned in the past must be adjusted in the light of future expectations and the following factors should be taken into account while calculating the average profits:<br>
+                    <br><i>(i) Abnormal income of a year should be deducted out of the net profit of that year.<br>
+                    <br>(ii) Abnormal loss of a year should be added back to the net profit of that year.<br>
+                    <br>(iii) Income from investments should be deducted out of the net profits of that year, because this income is received from outside the business.<br></i><br>
+                    <b>Weighted Average Profit Method:</b> This method is a modified version of average profit method.In this Method each year’s profit is assigned a weight. The highest weight is attached to profit of most recent year.<br>
+                    Eg: 2011-1, 2012-2, 2013-3, 2014-4.<br>
+                    <br>Each year profits are multiplied by assigned weights. Products are added & divided by total number of weights. Weighted average is multiplied by agreed Number of years of Purchase.<br>
+                    <br><i>Weighted Average Profit: = TotalproductofprofitsTotalofweights<br>
+                    <br>Goodwill = Weighted Average Profit × No. of years of purchase.<br></i><br>
+                    Weighted average profit method is considered better than the simple average profit method because it assigns more weightage to the profits of the latest year which is more likely to be earned in future. This method is preferred when profits over the past years have been continously rising or falling.<br>
+                    <br><b>Super profit Method: </b>In this method goodwill is calculated on the basis of surplus (excess) profits earned by a firm in comparison to average profits earned by other firms. If a business has no anticipated excess earnings, it will have no goodwill. Super Profit are the excess of actual profit over normal profits. Where Normal profits are profits earned by similar business.<br>
+                    If a firm earns higher profit in comparison to normal profit (generally earned by other firms of same industry) then the difference is called Super Profit. Goodwill is calculated on the basis of Super profit due to future expectations of earning capacity of the firm.<br>
+                    <br><b>Goodwill is calculated by the formula<br></b>
+                    <br><i>Goodwill = Super Profit × Number of years of purchase<br>
+                    <br>Super Profit = Average profit – Normal profits<br>
+                    <br>Normal Profit = Investment (Capital Employed)×  NormalRateofReturn100<br>
+                    <br>Capital Employed = Capital + Free Reserves – fictitious Assets (if any), or<br>
+                    <br>All Assets – (Goodwill, fictitious assets and non-trade Investment) – Outsider’s Liabilities<br></i>
+                    <br><br><b>Capitalised Method Under this method, goodwill can be calculated in two ways:<br></b>
+                    <br></b>(A) Capitalisation of Average Profit Method: </b>Under this method first of all we calculate the average profits and then we assess the capital needed for eanring such average profits on the basis of normal rate of return. Such capital is also called capitalised value of average profits. It is calculated as under.<br>
+                    <i>Capitalised value of the firm =Averageprofits×100Normalrateofreturn<br></i>
+                    Goodwill is calculated by deducting the actual capital employed in business from the capitalised value of average profits.There will be no goodwill if the actual capital employed in the business exceeds or equals the capitalised value of the average profits.<br>
+                    <br><i>Net Assets or Capital employed = Total assets – Outside liabilities<br>
+                    Goodwill = Capitalized value of average profits – Capital Employed<br></i>
+                    <br><b>(B) Capitalisation of Super Profit Method: </b>Under this method first of all we calculate the super profits and then we assess the capital needed for earning such super profits on the basis of normal rate of return. Such capital is actually the amount of goodwill. Super profits are calculated in the same manner as calculated in super profits method.<br>
+                    <br><i>Goodwill of the firm = Super Profits * 100 / Normal rate of return.<br></i>
+                    
+                    
+            </p>
+        </div>
+    </section>
+    <section id="books">
+        <span id="h">
+            Books recomended
+        </span>
+        <div id="bname">
+            <span class="bookname" id="TS">
+                TS Grewal
+            </span>
+            <span class="bookname" id="dk">
+                Dk Goel
+            </span>
+            <span class="bookname" id="arya">
+                Arya publication <br> sample papers
+            </span>
+            <span class="bookname" id="sp">
+                10 years sample paper
+            </span>
+        </div>
+    </section>
+
+
+   
+    <section id="video">
+        <span id="vidh">
+            Video Section  
+        </span>
+        <div id="firsto">
+           <span class="aaa"> Ch 1 <br></span>
+            <span class="btn">
+                <button type="button" class="buto" id="vv" onclick="ViewVideo()"><b>View</b></button>
+            </span>
+            <span class="btn">
+                <button type="button" class="buto" id="hv" onclick="HideVideo()"><b>Hide</b></button>
+            </span>
+            
+            <div id="firstvideos">
+              <iframe width="200" height="200" src="https://www.youtube.com/embed/i5KP1D2iLIo?list=PLNQu32qLj0W372UQjUd3XX8-XDQNaiPuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" class="vid"></iframe><br>
+<br><span class="contentv">
+Fundamentals Part  1
+</span> 
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/xUvaZua-jTo?list=PLNQu32qLj0W372UQjUd3XX8-XDQNaiPuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="vid"></iframe><br>
+
+<span class="contentv">Fundamentals Part 2</span>
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/Y9qQ9gZ0AwE?list=PLNQu32qLj0W372UQjUd3XX8-XDQNaiPuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="vid"></iframe><br>
+<span class="contentv">Fundamentals Part 3</span>
+
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/V9jKD8Ej9L4?list=PLNQu32qLj0W372UQjUd3XX8-XDQNaiPuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="vid"></iframe><br>
+<span class="contentv">Fundamentals Part 4 </span>
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/_G_Z6nhojZM?list=PLNQu32qLj0W372UQjUd3XX8-XDQNaiPuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="vid"></iframe>
+<br>
+<span class="contentv">Fundamentals part 5</span>
+
+              <iframe width="200" height="200" src="https://www.youtube.com/embed/-3714ADacOI?list=PLNQu32qLj0W372UQjUd3XX8-XDQNaiPuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="vid"></iframe><br>
+              <span class="contentv">Fundamentals part 6</span>
+            </div>
+        </div>
+        <hr>
+
+
+
+
+        <div id="seco">
+            <span class="aaa"> Ch 2 <br></span> 
+            <span class="btns">
+                <button type="button" class="buto" id="vs" onclick="ViewVideos()"><b>View</b></button>
+            </span>
+            <span class="btns">
+                <button type="button" class="buto" id="hs" onclick="HideVideos()"><b>Hide</b></button>
+            </span>
+            
+            <div id="firstvideos2">
+              
+
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/je5r3QTY9WQ?list=PLNQu32qLj0W372UQjUd3XX8-XDQNaiPuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class ="vid"> </iframe>
+<br><span class="contentv">
+ CH2 Goodwill Part  1
+</span> 
+
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/oFztTtmoPgo?list=PLNQu32qLj0W372UQjUd3XX8-XDQNaiPuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="vid"></iframe>
+<span class="contentv"> CH2 Goodwill Part 2</span>
+
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/p3MEd3bN4x8?list=PLNQu32qLj0W372UQjUd3XX8-XDQNaiPuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class ="vid"></iframe>
+
+<span class="contentv"> CH2 Goodwil Part 3 </span>
+
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/Z8WV66NWXKw?list=PLNQu32qLj0W372UQjUd3XX8-XDQNaiPuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class ='vid'></iframe>
+
+<span class="contentv"> CH2 Goodwill Part 4 </span>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+   
+    <footer>
+        Designed by -- student 12 commerce 
+    </footer>
+
+    <script src="js/acccounts.js">
+
+    </script>
+</body>
+
+</html>

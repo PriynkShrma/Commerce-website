@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSt</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marvel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        html {
+            font-size: 5px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #main {
+            background: url("imgs/grunge-6097778_1280.jpg");
+            height: 600px;
+            background-attachment: fixed;
+        }
+
+        .nav {
+            text-decoration: none;
+            font-size: 5rem;
+            color: white;
+            transition: ease-in-out;
+            font-family: 'Athiti';
+        }
+
+        .nav:hover {
+            font-size: 6rem;
+
+        }
+
+        #navbar {
+            display: flex;
+            margin-top: 0px;
+            animation-name: onload;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            background-color: #4c4141;
+        }
+
+        .content {
+            margin: 15px;
+            list-style-type: none;
+        }
+
+        #logo {
+            margin-top: 70px;
+            animation-name: onload;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #lo {
+            border: white solid;
+            border-radius: 150px;
+
+        }
+
+        #name {
+            font-size: 7rem;
+            color: white;
+            margin-top: 10px;
+            animation-name: onload;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'KoHo';
+
+        }
+
+        @keyframes onload {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        #notes {
+            background: linear-gradient(to bottom right, rgb(243, 243, 243), rgb(197, 197, 197));
+
+
+        }
+
+        #head {
+            font-size: 8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Orbitron';
+
+        }
+
+        #head2 {
+            font-size: 8rem;
+            margin-top: 20px;
+            margin-left: 10px;
+            font-family: 'Pathway Gothic One';
+        }
+
+        #first {
+            margin-top: 20px
+        }
+
+        #second {
+            margin-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .ch {
+            font-size: 6rem;
+            font-family: 'Josefin Slab';
+            margin-left: 10px;
+            font-weight: 900;
+        }
+
+        .btn {
+            margin-left: 5px;
+        }
+
+        .but {
+            margin-top: 20px;
+
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border-radius: 11px;
+            text-decoration: rgb(14, 13, 13);
+            ;
+            cursor: pointer;
+            background-color: rgba(255, 255, 240, 0);
+            transition: ease-in-out;
+            font-family: 'Rajdhani';
+            font-size: 4rem;
+        }
+
+        .but:hover {
+
+            background-color: black;
+            color: White;
+            padding-left: 65px;
+            padding-right: 65px;
+        }
+
+        .hb {
+            margin-top: 20px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            background-color: rgba(255, 255, 240, 0);
+            cursor: pointer;
+            border-radius: 11px;
+            text-decoration: rgb(14, 13, 13);
+            transition: ease-in-out;
+            font-family: 'Rajdhani';
+            font-size: 4rem;
+        }
+
+        .hb:hover {
+            padding-left: 65px;
+            padding-right: 65px;
+            background-color: black;
+            color: White;
+
+        }
+
+        #ch1 {
+            display: none;
+            font-size: 4rem;
+            margin-left: 10px;
+            font-family: 'Lexend';
+            font-weight: 300;
+        }
+
+        #ch2 {
+            display: none;
+            font-size: 4rem;
+            margin-left: 10px;
+            font-family: 'Lexend';
+            font-weight: 300;
+        }
+
+        #books {
+            background: url("imgs/rm27-ning-30-background.jpg");
+            background-attachment: fixed;
+            height: 800px;
+        }
+
+        #h {
+            font-size: 8rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 20px;
+            font-family: 'Montserrat';
+        }
+
+        #bname {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .bookname {
+            font-size: 5rem;
+            color: white;
+            font-family: 'Dosis';
+        }
+
+        #TS {
+            position: relative;
+            top: 400px;
+
+
+
+            background: #2f2f63;
+            padding: 50px;
+            border-radius: 93px;
+        }
+
+        #dk {
+            position: relative;
+            top: 200px;
+
+
+
+            background: #2f2f63;
+            padding: 50px;
+            border-radius: 93px;
+        }
+
+        #arya {
+            position: relative;
+            top: 410px;
+
+
+
+            background: #2f2f63;
+            padding: 50px;
+            border-radius: 93px;
+        }
+
+        #sp {
+            position: relative;
+            top: 270px;
+
+
+
+            background: #2f2f63;
+            padding: 50px;
+            border-radius: 93px;
+        }
+
+#bt{
+    margin-left: 10px;
+}
+#video{
+    background: linear-gradient(rgba(190, 187, 187, 0), rgb(93, 66 ,75)),url("imgs/texture-990088_1280.jpg");
+    background-attachment: fixed;
+    color: white;
+    
+}
+.buto{
+    padding-bottom: 10px;
+    font-family: 'Gruppo';
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+   
+    background-color: #673f3f;
+    color:white;
+}
+.buto:hover{
+    background-color: black;
+    color:white;
+}
+#firsto{
+    font-size: 6rem;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+.aaa{
+    font-family: 'Arima Madurai';
+
+}
+#vidh{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 9rem;
+    padding-top: 10px;
+    font-family: 'Exo';
+}
+#firstvideos{
+    display: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.vid{
+    margin: 13px;
+    border-radius: 10px;
+}
+.contentv{
+    font-size: 6rem;
+    position: relative;
+    top: 88px;
+    font-family: 'Marvel';
+    margin-right:18px;
+}
+
+#seco{
+    font-size: 6rem;
+    margin-left: 10px;
+    padding-bottom: 20px;
+
+}
+#firstvideos2{
+    display: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+footer{
+    position: relative;
+    font-size: 5rem;
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: black 2px solid;
+    height: 50px;
+    color: #a9a9a9;
+    background-color: #2d2d2d;
+}
+        @media only screen and (max-width: 330px) {
+            #navbar {
+                display: none;
+            }
+
+            #logo {
+                margin-top: 0px
+            }
+
+            html {
+                font-size: 3px;
+            }
+        }
+    </style>
+    <section id="main">
+        <header>
+            <ul id="navbar">
+                <a href="#notes" class="nav">
+                    <li class="content">Notes</li>
+                </a>
+                <a href="#books" class="nav">
+                    <li class="content">Books</li>
+                </a>
+                <a href="#video" class="nav">
+                    <li class="content">Videos</li>
+                </a>
+            </ul>
+        </header>
+        <hr>
+        <div id="logo">
+            <img src="imgs/294dd168f6264242910f3fdaa7fae214.png" alt="pic" id="lo">
+        </div>
+        <span id="name">
+            Business Studies
+        </span>
+    </section>
+
+    <section id="notes">
+        <div id="head">
+            Notes
+        </div>
+        <div id="head2">
+            Chapters
+        </div>
+        <div id="first">
+            <span class="ch">
+                PLANNING
+            </span>
+            <br>
+            <span class="btn">
+                <button type="button" class="but" id="bn" ><b>View</b></button>
+            </span>
+            <span class="btn">
+                <button type="button" class="hb" id="hide1" onclick="Hide()"><b>Hide</b></button>
+            </span>
+            <p id="ch1">
+                <b>Meaning:<br></b><br>
+                • Deciding in advance what to do& how to do it. It is one of the basic managerial functions.<br><br>
+                • It involves 2 aspects:<br>												
+                <i>Setting of aims and objectives of the organization + Selecting and developing an appropriate course of action to achieve these objectives.<br></i>												
+                <i>• Koontz and O‘Donnell </i>– ―Planning is deciding in advance what to do, how to do, when to do, and who to do it. Planning bridges the gap from where we are to where we want to go. It makes it possible for things to occur which would not otherwise happen.<br><br>
+                • Involves setting of objectives & developing an appropriate course of action to achieve these objectives<br>
+                <br><br><b>Importance of Planning<br></b><br>																								
+                <br><i>1. Planning provides directions:</i> By stating in advance how the work is to be done planning provides direction for action. If there was no planning, employees would be working in different directions and the organization would not be able to achieve its goals efficiently.<br>
+                <br><i>2. Planning reduces the risk of uncertainity:</i> Planning is an activity which enables a manager to look ahead, anticipate change, consider the impact of change and develop appropriate responses.<br>
+                <br><i>3. Planning reduces wasteful activities: </i>Planning serves as the basis of coordinating the activities and efforts of different departments and individuals whereby useless and redundant activities are mentioned.<br>
+                <br><i>4. Planning promotes innovative ideas: </i>Planning is the first function of management. Managers get the opportunity to develop new ideas and new ideas can take the shape of concrete plans.<br>
+                <br><i>5. Planning facilities decision making: </i>Under planning targets are laid down. The manager has to evaluate each alternative and select the most viable option.<br>
+                <br><i>6. Planning establishes standards for controlling:</i> Planning provides the standards against which the actual performance can be measured and evaluated. Control is blind without planning. Thus planning provides the basis for control.<br>
+                <br><br><b>Limitations of Planning<br></b><br>
+                <b>(A) Internal Limitations<br>	</b>																										
+                <br><i>1. Planning leads to rigidity:</i> Planning discourages individual’s initiative &creativity. The managers do not make changes according to changing business environment. They stop taking or giving suggestions and new ideas. Thus detailed planning may create a rigid framework in the organization.<br>
+                <br><i>2. Planning may not work in dynamic environment:</i> Planning is based on anticipation of future happenings and since future is uncertain and dynamic therefore, the future anticipations are not always true.<br>
+                
+                
+                <br><i>3. Planning involves huge costs: </i>When plans are drawn up, huge cost is involved in their formulation.<br>				
+                <br><i>4. Planning is time consuming: </i>Sometimes plans to be drawn up take so much of time that there is not much time left for their implementation.<br>														
+                <br><i>5. Planning does not guarantee success: </i>The success of an enterprise is possible only when plans are properly drawn and implement. Sometimes managers depend on previously tried successful plans, but it is not always true that a plan which has worked before will work effectively again.<br>
+                <br><i>6. Planning reduces creativity: </i>In planning, work is to be done as per pre-determined plans. It is decided in advance what is to be done, how it is to be done and who is going to do it. Moreover, planning is done by top management which leads to reduction of creativity of other levels of management.<br>
+                <br><br><b>(B) External Limitations<br></b>										
+                <br><br><i>They are those limitations of planning which arises due to external factors over which an organization has no control.<br>	</i>
+                1. Changes in Government policies way leads to failure of planning.<br>			
+                2. Natural calamities such as flood, earthquake etc. also adversely affect the success of planning.<br>	
+                3. Changes in the strategies of competitors also leads to failure of planning many times.<br>
+                4. Regular technological changes may affect planning.<br>
+                5. Changes in the Economic and Social Conditions also reduces the effectiveness of planning.<br>
+                <br><br><b>Planning Process<br></b>
+                <br><i>1. Setting Objectives:<br></i>				
+                <br>– Objectives specify what the organization wants to achieve.<br>										
+                <br>– Objectives can be set for the entire org. & stated to each dept. within the org. very clearly, to determine how all depts. would contribute towards overall objectives.<br>
+                <br>-Then these have to percolate down to all employees at all levels so that they understand how their actions contribute to achieving objectives.<br>
+                <br>– E.g. Objective could be to achieve sales, expansion of business etc.<br>
+                <br><br><b>2. Developing Premises:<br></b>
+                <br>– Plans are made on the basis of some assumptions.<br>			
+                <br>– These assumptions, which provide the basis for planning, are called premises.<br>							
+                <br>– All managers involved in planning should be familiar w/ them, cuz plans are expected to operate & reach their destination subject to these. They can be:<br>	
+                <br>• Internal premises: Cost of products, capital, machinery, profitability etc.<br>				
+                <br>• External premises: Changes in technology, population growth, competition, govt. policies etc<br>
+                
+                
+                <br><br><b>3. Identifying Alternative Courses Of Action:<br>		</b>														
+                <i>– After setting the objectives, managers make a list of alternatives through which the org. can achieve its objectives as there can be many ways to achieve the objectives & managers must know all of them.<br></i>
+                – E.g. Sales could be increased through any of the following ways:<br>
+                <br>• By enhancing advertising expenditure<br>
+                <br>• Appointing salesmen for door-to-door sales<br>
+                <br>• By offering discounts<br>	
+                <br>• By adding more product lines<br>.
+                <br><br><b>4. Evaluating Alternative Courses Of Action<br>		</b>											
+                <br>– Positive & negative aspects of each &every proposal need to be evaluated to determine their feasibility and consequences in the light of each objective to be achieved.<br>					
+                <br>– E.g. In financial plans, risk-return trade-off are imp. Riskier the investment, higher the returns it is likely to give. To evaluate such proposals, detailed calc. of earnings, taxes, earnings per share etc. should be done.<br>	
+                <br><br><b>5. Selecting The Best Alternative<br>	</b>				
+                <br>– Real point of decision-making→ Best plan has to be adopted and implemented.<br>
+                <br>– The ideal plan = most feasible, profitable and with least negative consequences.<br>											
+                <br>– Most plans may not be subjected to mathematical analysis. In such cases, subjectivity & manager‘s experience, judgment and intuition are important to select the most viable alternative.<br>
+                <br>– Sometimes a combination of plans may be selected instead of one best course.<br>
+                <br><br><b>6. Implementing The Plan<br></b>			
+                <br>– Concerned with putting the plan into action.<br>
+                <br>– For implementing the plans, managers start organizing & assembling resources for it.<br>									
+                <br>– E.g. If there is a plan to ↑ production, then more labour, more machinery will be reqd. This step would also involve organizing for more labour and purchase of machinery.<br>	
+                <br><br><b>7. Follow Up Action<br></b>									
+                <br>– This involves monitoring the plans and ensuring that activities are performed according to the schedule.<br>					
+                <br>– Whenever there are deviations from plans, immediate action has to be taken to bring implementation according to the plan or make changes in the plan.<br>
+                <br><br><br><b>TYPES OF PLAN<br></b>
+                
+                
+                
+                <br><br><b>SINGLE USE PLAN<br>	</b>																																																														
+                <i>A Single use plan in a business refers to plan developed for a one-time project or event that has one specific objective. It applies to activities that do not reoccur or repeat. It is specifically designed to achieve a particular goal. Such plan is developed to meet the needs of a unique situation. The length of a single use plan differs greatly depending on the project in question, as a single event plan may only last one day while a single project may last one week or months. For example, an outline for an advertising campaign. After the campaign runs its course, the short term plan will lose its relevance except as a guide for creating future plans.<br></i>
+                <br><i>Types of Single Use Plan<br>	</i>																				
+                <br><b>1. Programme: </b>A programme is a single use plan containing detailed statements about project outlining the objectives, policies, procedures, rules, tasks, physical and human resources required to implement any course of action.<br>
+                <br><b>2. Budget: </b>A budget is a statement of expected result expressed in numerical terms for a definite period of time in the future.<br>
+                <br><br><b>STANDING PLANS<br>		</b>																																												
+                <i>Standing plans are used over and over again because they focus on organizational situations that occur repeatedly. They are usually made once and retain their value over a period of years while undergoing revisions and updates. That is why they are also called repeated use plans. For example, Businessman plans to establish a new business Entrepreneur drafts business plan before opening the doors to their business, and they can use their plan to guide their efforts for years into the future.<br>
+                Types of Standing Plans<br>	</i>																																					
+                <br><b>1. Objectives:</b> Objectives are defined as ends for the achievement of which an organization goes on working. They may be designed as the desired future position that the management would like to reach. The first and foremost step of the planning process is setting organizational objectives. Examples increasing sales by 10%, Getting 20% return on Investment etc. Objectives should be clear and achievable.<br>						
+                <br><b>2. Strategy:</b> Strategies refer to those plans which an organization prepares to face various situations, threats and opportunities. When the managers of an organization prepare a new strategy for the business it is called internal strategy and when some strategies are prepared to respond to the strategies of the competitors, then such strategies are called external strategies. Examples, selection of the medium of advertisement, selection of the channel of distribution etc.<br>
+                <br><b>3. Policy:</b> Policies refers to the general guidelines which brings uniformity in decision-making for achievement of organizational objectives. They provide directions to the managers of an organization. They are flexible as they may be changed as per requirement. Example, selling goods on cash basis only, reserving some post for women in the organization.<br>
+                
+                                                                                                                                        
+                <br><b>4. Procedure:</b> Procedures are those plans which determine the sequential steps to carry out some work/activity. They indicate which work is to be done in which sequence/way. They help in the performance of work. Procedures are guides to action. Example: Process adopted in the Selection of Employees.<br>
+                <br><b>5. Rule:</b>Rules are specific statement that tell what is to be done and whatnot to be done in a specified situation. They help in indicating which points are to be kept in mind while performing task/work. Rules are rigid which ensure discipline in the organization. Example : ‘No smoking in the office premises’. Violation of rules may invite penalty.<br>							
+                <br><b>6. Method: </b>Methods are standardized ways or manners in which a particular task has to be performed. There may be many ways/method of completing a task but that method/way must be selected by which work can be done early at the minimum possible cost. Methods are flexible. Example, various methods of training are adopted by an organization to train its employees like apprenticeship training, vestibule training etc.<br>
+            </p>
+        </div>
+        <hr>
+        <div id="second">
+            <span class="ch">
+                ORGANISING
+            </span>
+            <br>
+            <span class="btn">
+                <button type="button" class="but" id="bn2" onclick="viewt()"><b>View</b></button>
+            </span>
+            <span class="btn">
+                <button type="button" class="hb" id="hide2" onclick="Hidet()"><b>Hide</b></button>
+            </span>
+            <p id="ch2">
+                <b>1. Organising Identifying and grouping different activities in the organisation and bringing together the physical, financial and human resources to establish most productive relations for the achievement of specific goal of organisation.<br>
+
+                    According to Henry Fayol, “To organise a business is to provide it with everything useful to its functioning; raw materials, machines and tools, capital and personnel.”<br></b>
+                    <br><br><br><b>2. Process of Organising<br>	</b>	
+                    <br>(i) Identification and division of work<br>
+                    <br>(ii) Departmentalisation<br>
+                    <br>(iii) Assignment of duties<br>		
+                    <br>(iv) Establishing reporting relationships<br>
+                    <br><br><br><b>3. Importance of Organising<br></b>
+                    <br>(i) Benefits of specialisation<br>	
+                    <br>(ii) Clarity in working relationships<br>
+                    <br>(iii) Optimum utilisation of resources<br>
+                    <br>(iv) Adaptation to change<br>
+                    (<br>v) Effective administration<br>
+                    <br>(vi) Development of personnel<br>
+                    <br>(vii) Expansion and growth<br>									
+                    <br><br><b>4. Organisation Structure It can be defined as “Network of job positions, responsibilities and authority at different levels.”<br></b>
+                    <br><i>The considerations to be kept in mind while farming the organisational structure are<br></i>
+                    <br>(i) Job design<br>
+                    <br>(ii) Departmentation<br>		
+                    <br>(iii) Span of management<br>
+                    <br>(iv) Delegation of authority<br>							
+                    <br><br><b>5. Types of Organisation Structure The organisational structure can mainly be of two types which are<br></b>					
+                    <br><i>(i) Functional Structure When the activities or jobs are grouped keeping in mind the functions or the job then it is called functional structure.<br></i>
+                    <br><b>(a) Advantages<br></b>
+                    <br> Specialisation<br>
+                    <br>Easy supervision<br>
+                    <br>Easy co-ordination<br>
+                    
+                    
+                    <br>t helps in increasing managerial efficiency<br>
+                    <br>Effective training<br>
+                    <br><br><b>(b) Disadvantages<br>	</b>			
+                    <br>* The departments become specialised in their own way only.<br>		
+                    <br>* When departments become too large then the co-ordination decrease. <br>					
+                    <br>* When the organisational goals is not achieved then it becomes very difficult to make any one department accountable.<br>		
+                    <br>* Employees get training of one function only i.e., the department to which they belong so they can not be shifted to other department.<br>		
+                    <br><i>(c) Suitability It is most suitable when the size of the organisation is large, has diversified activities and operations require a high degree of specialisation.<br>	</i>		
+                    <br>(ii) Divisional Structure When the organisation is large in size and is producing more than one type of product then activities related to one product are grouped under one department.<br>
+                    <br><br><b>(a) Advantages<br>	</b>	
+                    <br>* Product specialisation<br>
+                    <br>* Fast decision making<br>
+                    <br>* Accountability<br>
+                    <br>* Flexibility<br>		
+                    <br>* Expansion and growth<br>
+                    <br><br><b>(b) Disadvantages<br>	</b>								
+                    <br>* Each department will require all the resources as every division will be working as an independent unit.<br>
+                    <br>* Conflict on allocation of resources.<br>								
+                    <br>* Each department focusses on their product only and they fail to keep themselves as a part of one common organisation.<br>
+                    <br><br><b>(c) Suitability<br></b>				
+                    <br>* Organisation producing multi-product.<br>		
+                    <br>*Organisation which require product specialisation.<br>
+                    <br>* Growing companies which plan to add more line of products in future.<br>																						
+                    <br><br><br><b>6. Formal Organisation When the managers are carrying on organising process then as a result of organisation process an organisational structure is created to achieve systematic- working and efficient utilisation of resources. This type of structure is known as formal organisational structure.<br></b>
+                    <br><br><b>(i) Advantages<br></b>
+                    
+                    
+                    <br>(a) Systematic working<br>			
+                    <br>(b) Achievement of organisational objectives<br>
+                    <br>(c) No overlapping of work<br>
+                    <br>(d) Co-ordination<br>		
+                    <br>(e) Creation of chain of command<br>
+                    <br>(f) More emphasis on work<br>
+                    <br><br><b>(ii) Disadvantages<br></b>
+                    <br>(a) Delay in action<br>		
+                    <br>(b) Ignores social needs of employees<br>
+                    <br>(c) Emphasis on work only<br>																
+                    <br><br><b>7. Informal Organisation It is a network of personal and social relations not established or required by the formal organisation but arising spontaneously as people associate with one another.<br></b>
+                    <br><br><b>(i) Advantages<br></b>			
+                    <br>(a) Fast communication<br>		
+                    <br>(b) Fulfills social needs<br>
+                    <br>(c) Correct feedback<br>
+                    <br><br><b>(ii) Disadvantages<br></b>
+                    <br>(a) Spread rumours<br>
+                    <br>(b) No systematic working<br>
+                    <br>(c) May bring negative results<br>
+                    <br>(d) More emphasis to individual interest<br>																
+                    <br><br><b>8. Delegation of Authority “A process of entrusting responsibility and authority to the subordinates and creating accountability on those employees who are entrusted responsibility and authority.”<br></b>
+                    <br><br><b>9. Importance of Delegation<br></b>
+                    <br>(i) Effective management<br>
+                    <br>(ii) Employee development<br>
+                    <br>(iii) Motivation of employees<br>
+                    <br>(iv) Facilitation of growth<br>		
+                    <br>(v) Basis of management hierarchy<br>
+                    <br>(vi) Better co-ordination<br>	
+                    <br><br><b>10. Elements of Delegation<br></b>														
+                    <br>(i) Responsibility It means the work assigned to an individual. It includes all the physical and mental activities to be performed by the employees at a particular job position.<br>
+                    
+                    
+                    <br>(ii) Authority It means power to take decision. To carry on the responsibility every employee need to have some authority. <br>
+                    <br>(iii) Accountability It means subordinates will be answerable for the non-completion of the task.<br>
+                    <br><br><b>11. Decentralisation Decentralisation explains the manner in which decision-making responsibilities are divided among hierarchical level.<br></b>
+                    <br><br><b>12. Importance of Decentralisation<br></b>
+                    <br>(i) Develops initiative among subordinate<br>
+                    <br>(ii) Develops managerial talent for the future<br>
+                    <br>(iii) Quick decision making<br>
+                    <br>(iv) Relief to top management<br>
+                    <br>(v) Facilitates growth<br>
+                    <br>(vi) Better control<br>
+                    
+                    
+                     
+                    
+                    
+            </p>
+        </div>
+    </section>
+    <section id="books">
+        <span id="h">
+            Books recomended
+        </span>
+        <div id="bname">
+            <span class="bookname" id="TS">
+                Poonam Gandhi 
+            </span>
+            <span class="bookname" id="dk">
+                Shubhash Dey
+            </span>
+            <span class="bookname" id="arya">
+                Arya publication <br> sample papers
+            </span>
+            <span class="bookname" id="sp">
+                10 years sample paper
+            </span>
+        </div>
+    </section>
+
+
+   
+    <section id="video">
+        <span id="vidh">
+            Video Section  
+        </span>
+        <div id="firsto">
+           <span class="aaa"> Ch 1 <br></span>
+            <span class="btn">
+                <button type="button" class="buto" id="vv" onclick="ViewVideo()"><b>View</b></button>
+            </span>
+            <span class="btn">
+                <button type="button" class="buto" id="hv" onclick="HideVideo()"><b>Hide</b></button>
+            </span>
+            
+            <div id="firstvideos">
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/FNTIIY5_paQ?list=PLv_Jo3K8g_Dq2TTBlconL7Yjm5U40tKE_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="vid"></iframe>
+<br><span class="contentv">
+Planning Part  1
+</span> 
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/pRdWDXFhouY?list=PLv_Jo3K8g_Dq2TTBlconL7Yjm5U40tKE_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class = "vid"></iframe>
+
+<span class="contentv">Planning Part 2</span>
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/uzBqpZEzxQ0?list=PLv_Jo3K8g_Dq2TTBlconL7Yjm5U40tKE_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<span class="contentv" class ="vid ">Planning Part 3</span>
+
+
+
+
+              
+            </div>
+        </div>
+        <hr>
+
+
+
+
+        <div id="seco">
+            <span class="aaa"> Ch 2 <br></span> 
+            <span class="btns">
+                <button type="button" class="buto" id="vs" onclick="ViewVideos()"><b>View</b></button>
+            </span>
+            <span class="btns">
+                <button type="button" class="buto" id="hs" onclick="HideVideos()"><b>Hide</b></button>
+            </span>
+            
+            <div id="firstvideos2">
+              
+
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/FSxqrLmvz0A?list=PLv_Jo3K8g_Dq2TTBlconL7Yjm5U40tKE_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class= "vid"></iframe>
+<br><span class="contentv">
+ Organising Part  1
+</span> 
+
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/KAkLbJ3swdo?list=PLv_Jo3K8g_Dq2TTBlconL7Yjm5U40tKE_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class ="vid"></iframe>
+<span class="contentv"> Organising Part 2</span>
+
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/oamSWNbG5_Q?list=PLv_Jo3K8g_Dq2TTBlconL7Yjm5U40tKE_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class ="vid"></iframe>
+
+<span class="contentv"> Organising Part 3 </span>
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+   
+    <footer>
+        Designed by -- student 12 commerce 
+    </footer>
+
+    <script src="js/acccounts.js">
+
+    </script>
+</body>
+
+</html>

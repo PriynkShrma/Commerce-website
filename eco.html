@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macro Eco</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marvel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        html {
+            font-size: 5px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #main {
+            background: url("imgs/grunge-6097778_1280.jpg");
+            height: 600px;
+            background-attachment: fixed;
+        }
+
+        .nav {
+            text-decoration: none;
+            font-size: 5rem;
+            color: white;
+            transition: ease-in-out;
+            font-family: 'Athiti';
+        }
+
+        .nav:hover {
+            font-size: 6rem;
+
+        }
+
+        #navbar {
+            display: flex;
+            margin-top: 0px;
+            animation-name: onload;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            background-color: #4c4141;
+        }
+
+        .content {
+            margin: 15px;
+            list-style-type: none;
+        }
+
+        #logo {
+            margin-top: 70px;
+            animation-name: onload;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #lo {
+            border: white solid;
+            border-radius: 150px;
+
+        }
+
+        #name {
+            font-size: 7rem;
+            color: white;
+            margin-top: 10px;
+            animation-name: onload;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'KoHo';
+
+        }
+
+        @keyframes onload {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        #notes {
+            background: linear-gradient(to bottom right, rgb(243, 243, 243), rgb(197, 197, 197));
+
+
+        }
+
+        #head {
+            font-size: 8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Orbitron';
+
+        }
+
+        #head2 {
+            font-size: 8rem;
+            margin-top: 20px;
+            margin-left: 10px;
+            font-family: 'Pathway Gothic One';
+        }
+
+        #first {
+            margin-top: 20px
+        }
+
+        #second {
+            margin-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .ch {
+            font-size: 6rem;
+            font-family: 'Josefin Slab';
+            margin-left: 10px;
+            font-weight: 900;
+        }
+
+        .btn {
+            margin-left: 5px;
+        }
+
+        .but {
+            margin-top: 20px;
+
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border-radius: 11px;
+            text-decoration: rgb(14, 13, 13);
+            ;
+            cursor: pointer;
+            background-color: rgba(255, 255, 240, 0);
+            transition: ease-in-out;
+            font-family: 'Rajdhani';
+            font-size: 4rem;
+        }
+
+        .but:hover {
+
+            background-color: black;
+            color: White;
+            padding-left: 65px;
+            padding-right: 65px;
+        }
+
+        .hb {
+            margin-top: 20px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            background-color: rgba(255, 255, 240, 0);
+            cursor: pointer;
+            border-radius: 11px;
+            text-decoration: rgb(14, 13, 13);
+            transition: ease-in-out;
+            font-family: 'Rajdhani';
+            font-size: 4rem;
+        }
+
+        .hb:hover {
+            padding-left: 65px;
+            padding-right: 65px;
+            background-color: black;
+            color: White;
+
+        }
+
+        #ch1 {
+            display: none;
+            font-size: 4rem;
+            margin-left: 10px;
+            font-family: 'Lexend';
+            font-weight: 300;
+        }
+
+        #ch2 {
+            display: none;
+            font-size: 4rem;
+            margin-left: 10px;
+            font-family: 'Lexend';
+            font-weight: 300;
+        }
+
+        #books {
+            background: url("imgs/rm27-ning-30-background.jpg");
+            background-attachment: fixed;
+            height: 800px;
+        }
+
+        #h {
+            font-size: 8rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 20px;
+            font-family: 'Montserrat';
+        }
+
+        #bname {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .bookname {
+            font-size: 5rem;
+            color: white;
+            font-family: 'Dosis';
+        }
+
+        #TS {
+            position: relative;
+            top: 400px;
+
+
+
+            background: #2f2f63;
+            padding: 50px;
+            border-radius: 93px;
+        }
+
+        #dk {
+            position: relative;
+            top: 200px;
+
+
+
+            background: #2f2f63;
+            padding: 50px;
+            border-radius: 93px;
+        }
+
+        #arya {
+            position: relative;
+            top: 410px;
+
+
+
+            background: #2f2f63;
+            padding: 50px;
+            border-radius: 93px;
+        }
+
+        #sp {
+            position: relative;
+            top: 270px;
+
+
+
+            background: #2f2f63;
+            padding: 50px;
+            border-radius: 93px;
+        }
+
+#bt{
+    margin-left: 10px;
+}
+#video{
+    background: linear-gradient(rgba(190, 187, 187, 0), rgb(93, 66 ,75)),url("imgs/texture-990088_1280.jpg");
+    background-attachment: fixed;
+    color: white;
+    
+}
+.buto{
+    padding-bottom: 10px;
+    font-family: 'Gruppo';
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+   
+    background-color: #673f3f;
+    color:white;
+}
+.buto:hover{
+    background-color: black;
+    color:white;
+}
+#firsto{
+    font-size: 6rem;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+.aaa{
+    font-family: 'Arima Madurai';
+
+}
+#vidh{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 9rem;
+    padding-top: 10px;
+    font-family: 'Exo';
+}
+#firstvideos{
+    display: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.vid{
+    margin: 13px;
+    border-radius: 10px;
+}
+.contentv{
+    font-size: 6rem;
+    position: relative;
+    top: 88px;
+    font-family: 'Marvel';
+}
+
+#seco{
+    font-size: 6rem;
+    margin-left: 10px;
+    padding-bottom: 20px;
+
+}
+#firstvideos2{
+    display: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-right:100px;
+}
+footer{
+    position: relative;
+    font-size: 5rem;
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: black 2px solid;
+    height: 50px;
+    color: #a9a9a9;
+    background-color: #2d2d2d;
+}
+        @media only screen and (max-width: 330px) {
+            #navbar {
+                display: none;
+            }
+
+            #logo {
+                margin-top: 0px
+            }
+
+            html {
+                font-size: 3px;
+            }
+        }
+    </style>
+    <section id="main">
+        <header>
+            <ul id="navbar">
+                <a href="#notes" class="nav">
+                    <li class="content">Notes</li>
+                </a>
+                <a href="#books" class="nav">
+                    <li class="content">Books</li>
+                </a>
+                <a href="#video" class="nav">
+                    <li class="content">Videos</li>
+                </a>
+            </ul>
+        </header>
+        <hr>
+        <div id="logo">
+            <img src="imgs/d0180c80b0784697b0e40717dc12d675.png" alt="pic" id="lo">
+        </div>
+        <span id="name">
+            MACRO ECONOMICS
+        </span>
+    </section>
+
+    <section id="notes">
+        <div id="head">
+            Notes
+        </div>
+        <div id="head2">
+            Chapters
+        </div>
+        <div id="first">
+            <span class="ch">
+                NATIONAL INCOME
+            </span>
+            <br>
+            <span class="btn">
+                <button type="button" class="but" id="bn" ><b>View</b></button>
+            </span>
+            <span class="btn">
+                <button type="button" class="hb" id="hide1" onclick="Hide()"><b>Hide</b></button>
+            </span>
+            <p id="ch1">
+                <b>Goods</b> :In economics a goods is defined as any physical object, manmade, that could command a price in the market and these are the materials that satisfy human wants and provide utility<br>
+
+                <br><b>Consumption Goods :</b> Those final goods which satisfy human wants directly. ex- ice-cream and milk used by the households.<br>						
+                <br><b>Capital Goods :</b>Those final goods which help in production. These goods are used for generating income. These goods are fixed assets of the producers.ex- plant and machinery.<br>
+                <br><b>Final Goods </b>.are those goods which are used either for final consumption or for investment.<br>					
+                <br><b>Intermediate Goods</b> refers to those goods and services which are used as a raw material for further production or for resale in the same year.<br>
+                <br>These goods do not fulfill needs of mankind directly.<br>									
+                <br><b>Investment :</b>Addition made to the physical stock of capital during a period of time is called investment. It is also called capital formation.<br>
+                <br><b>capital formation:- </b>Change in the stock of capital is also called capital formation.<br>								
+                <br><b>Depreciation :</b>means fall in value of fixed capital goods due to normal wear and tear and expected obsolescence. It is also called consumption of fixed capital.<br>
+                <br><b>Gross Investment :</b>Total addition made to physical stock of capital during a period of time. It includes depreciation. OR Net Investment + Depreciation<br>
+                <br><b>Net Investment :</b>Net addition made to the real stock of capital during a period of time. It excludes depreciation.<br>
+                <br><i>Net Investment = Gross investment – Depreciation.<br>		</i>							
+                <br><b>Stocks :</b>Variables whose magnitude is measured at a particular point of time are called stock variables. Eg. National Wealth, Inventory etc.<br>
+                <br><b>Flows :</b>Variables whose magnitude is measured over a period of time are called flow variable. Eg. National income, change in stock etc.<br>													
+                <br><b>Circular flow of income :</b>It refers to continuous flow of goods and services and money income among different sectors in the economy. It is circular in nature. It has neither any end and nor any beginning point. It helps to know the functioning of the economy.<br>
+                <br><b>Leakage:</b>It is the amount of money which is withdrawn from circular flow of income. For eg. Taxes, Savings and Import. It reduces aggregate demand and the level of income.<br>
+                                                                                            
+                                                                                                    
+                <br><b>Injection :</b>It is the amount of money which is added to the circular flow of income. For e.g. Govt. Exp., investment and exports. It increases the aggregate demand and the level of income.<br>
+                <br><b>Economic Territory :</b>Economic (or domestic) Territory is the geographical territory administrated by a Government within which persons, goods, and capital circulate freely.<br>
+                                    
+                <br><br><i>Scope of Economic Territory :<br></i>
+                <br>(a) Political frontiers including territorial waters and airspace.<br>
+                <br>(b) Embassies, consulates, military bases etc. located abroad.<br>		
+                <br>(c) Ships and aircraft operated by the residents between two or more countries.<br>		
+                <br>(d) Fishing vessels, oil and natural gas rigs operated by residents in the international waters.<br>						
+                <br><br><b>Normal Resident of a country: </b>is a person or an institution who normally resides in a country and whose Centre of economic interest lies in that country.<br>
+                <br><b>Exceptions:-</b><br> (a) Diplomats and officials of foreign embassy.<br>
+                <br>(b) Commercial travellers, tourists students etc.<br>										
+                <br>(c) People working in international organizations like WHO, IMF, UNESCO etc. are treated as normal residents of the country to which they belong.<br>
+                <br><br><b>The related aggregates of national income are:-<br></b>
+                <br><i>(i) Gross Domestic Product at Market price (GDPMP)<br>
+                <br>(ii) Gross Domestic Product at Factor Cost (GDPFC)<br>
+                <br>(iii) Net Domestic Product at Market Price (NDPMP)<br>
+                <br>(iv) Net Domestic Product at FC or (NDPFC)<br>
+                <br>(v) Net National Product at FC or National Income (NNPFC)<br>
+                <br>(vi) Gross National Product at FC (GNPFC)<br>
+                <br>(vii) Net National. Product at MP (NNPMP)<br>
+                <br>(viii) Gross National Product at MP (GNPMP)<br>	</i>		
+                <br><br> <b>final goods and services produced within the domestic territory of a country<br>
+                during an accounting year.<br></b>					
+                <br><i>GDPMP = Net domestic product at FC (NDPFC) + Depreciation + Net<br>
+                Indirect tax.<br>							
+                <br>(ii) Gross Domestic Product at FC : It is the value of all final goods and services<br>
+                produced within domestic territory of a country which does not include net<br></i>
+                            
+                
+                <br><br><b>indirect tax.<br>	</b>			
+                <br><i>GDPFC = GDPMP – Indirect tax + Subsidy<br>
+                or GDPFC = GDPMP – NIT<br>		</i>				
+                <br><b>(iii) Net Domestic Product at Market Price : </b>It is the money value of all final<br>
+                goods and services produced within domestic territory of a country during an<br>
+                accounting year and does not include depreciation.<br>
+                <i>NDPMP = GDPMP – Depreciation<br>		</i>			
+                <br><b>(iv) Net Domestic Product at FC : </b>It is the value of all final goods and services<br>
+                which does not include depreciation charges and net indirect tax. Thus it is<br>
+                equal to the sum of all factor incomes (compensation of employees, rent,<br>
+                interest, profit and mixed income of self employed) generated in the domestic<br>
+                territory of the country.<br>				
+                <i>NDPFC = GDPMP – Depreciation – Indirect tax + Subsidy<br>	</i>		
+                <br><b>(v) Net National Product at FC (National Income) : </b>It is the sum total of factor<br>
+                incomes (compensation of employees + rent + interest + profit) earned by<br>
+                normal residents of a country in an accounting year<br>
+                or<br>								
+                <i>NNPFC = NDPFC + Factor income earned by normal residents from abroad –<br>
+                factor payments made to abroad.<br>	</i>				
+                <br><b>(vi) Gross National Product at FC: </b>It is the sum total of factor incomes earned<br>
+                by normal residents of a country along with depreciation, during an accounting<br>
+                year.<br>				
+                <i>GNPFC = NNPFC + Depreciation OR<br>
+                GNPFC = GDPFC + NFIA<br>	</i>					
+                <br><b>(vii) Net National Product at MP :</b> It is the sum total of factor incomes earned by<br>
+                the normal residents of a country during an accounting year including net<br>
+                indirect taxes.<br>				
+                <i>NNPMP = NNPFC + Indirect tax – Subsidy<br>		</i>		
+                <br><b>(viii) Gross National Product at MP :</b> It is the sum total of factor incomes earned<br>
+                by normal residents of a country during an accounting year including<br>
+                depreciation and net indirect taxes.<br>
+                <i>GNPMP = NNPFC + Dep + NIT<br></i>
+                            
+                <br><br><b>Domestic Aggregates<br>		</b>																									
+                <br>Gross domestic Product at Market Priceis the market value of all the final goods and services produced by all producing units located in the domestic territory of a country during an accounting year. It includes the value of depreciation or consumption of fixed capital.<br>
+                                                                                            
+                                                                                                            
+                <br>Net Domestic Product at Market PriceDepreciation (consumption of Fixed capital). It is the market value of final goods and services produced within the domestic territory of the country during a year exclusive of depreciation.<br>
+                It is the factor income accruing to owners of factors of production for suppling factor services with in domestic territory during an accounting year.<br>
+                            
+                <br><br><b>NATIONAL AGGREGATES<br>	</b>																	
+                <br>Gross National Product at Market Price ) is the market value of all the final goods and services produced by normal residents (in the domestic territory and abroad) of a country during an accounting year.<br>
+                                                                                                        
+                <br><b>National Income  : </b>It is the sum total of all factors incomes which are earned by normal residents of a country in the form of wages. rent, interest and profit during an accounting year.<br>
+                
+                
+                 
+                
+                
+                
+                
+                                                                                                                            
+                <br><br><b>National Income at Current Prices :</b> It is also called nominal National income. When goods and services produced by normal residents within and outside of a country in a year valued at current years prices i.e. current prices is called national income at current prices.<br>
+                <i>Y = Q x P<br>
+                Y = National income at current prices<br>				
+                Q = Quantity of goods and services produced during an accounting year<br>	
+                P = Prices of goods and services prevailing during the current accounting year<br>	</i>																	
+                <br><br><b>National Income at Constant Prices : </b>It is also called as real national income. When goods and services produced by normal residents within and outside of a country in a year valued at constant price i.e. base year’s price is called National Income at Constant Prices.<br>
+                <i>Y’ = Q x P’<br>
+                
+                                    
+                Y’ = National income at constant prices<br>				
+                Q = Quantity of goods and services produced during an accounting year<br>
+                P’ = Prices of goods and services prevailing during the base year<br>	</i>								
+                <br><br><b>Value of Output : </b>Market value of all goods and services produced by an enterprise during an accounting year.<br>				
+                <br><br><b>Value added : </b>It is the difference between value of output of a firm and value of inputs bought from the other firms during a particular period of time.<br>									
+                <br><br><b>Problem of Double Counting : </b>Counting the value of a commodity more than once while estimating national income is called double counting. It leads to overestimation of national income. So, it is called problem of double counting.<br>
+                <br><b>Ways to solve the problem of double counting.<br></b>
+                <br>(a) By taking the value of only final goods.<br>
+                <br>(b) By value added method.<br>
+                <br><br><b>Components of Added by all 3 sectors</b>
+                <br>1. Value Added by Primary Sector(=VO-IC)<br>
+                <br>2. Value Added by Secondary Sector(=VO-IC)<br>
+                <br>3. Value Added by Tertiary Sectors(=VO-IC)<br>
+                <br><i>		
+                VO=Value of output<br>		
+                IC=Intermediate Consumption<br>
+                VO=Price X quantity OR<br>
+                Sales + Change in stock<br>				
+                (Change in stock = Closing Stock – Opening Stock)<br></i>
+                                
+                <br><br><b>Components of Final Expenditure:<br></b>
+                <i><br>1. Final Consumption Expenditure<br></i>
+                <br>a. Private Final Consumption Expenditure(C)<br>		
+                <br>b. Government Final Consumption Expenditure(G)<br>
+                <br><br><i>2. Gross Domestic Capital Formation<br></i>	
+                <br>a. Gross Domestic Fixed Capital Formation<br>
+                <br>i. Gross business Fixed Investment<br>
+                <br>ii. Gross Residential Construction Investment<br>
+                <br>iii. Gross public Investment<br>		
+                <br>b. Change in Stock or Inventory Investment<br>
+                <br><br><b>3. Net Export(X-M)<br></b>
+                
+                
+                <br>a. Export(X)<br>
+                <br>b. Import(M)<br>
+                                
+                <br><br><b>Components of Domestic Income :<br></b>
+                <br><i>1. Compensation of Employees<br></i>	
+                <br>a. Wages and salaries(Cash/or kinds)<br>		
+                <br>b. Employers Contribution of Social security Schemes<br>
+                <br><i>2. Operating surplus<br></i>
+                <br>a. Rent<br>
+                <br>b. Interest<br>
+                <br>c. Profit<br>
+                <br><br>i. Corporate Tax<br>
+                <br>ii. Dividend<br>								
+                <br>iii. Undistributed corporate profit<br>		
+                <br><br><b>3. Mixed Income for self-Employed person<br>	</b>														
+                <br><b>Net Factor Income from Abroad NFIA = </b>It is difference between factor income received/earned by normal residents of a country and factor income paid to non-residents of the country.<br>
+                <br><br><b>Components of NFIA :<br>	</b>		
+                <br>1. Net Compensation of Employees<br>			
+                <br>2. Net Income from Property and entrepreneurship<br>
+                <br>3. Net Retained earning of resident companies abroad<br>
+                
+                <i>NFIA = Factor Income Received from Abroad.<br></i>
+                <br><br><b>Factor Income Paid to Abroad.<br></b>
+                                
+                <br><i>NFIA = Net compensation of Employees<br></i>
+                <br>Net income from property and entrepreneurship<br>.
+                <br>+ Net retained earning of resident companies abroad.<br>												
+                <br><br><b>Net National Disposable Income (NNDI): </b>It is defined as net national product at Market price  plus net current transfer from rest of the world.<br>
+                <br><i>NNDI = NNPMP<br>						
+                <br>+ Net current transfers from rest of the world.<br>					
+                <br>=National income + net indirect tax + net current transfers from the rest of the world.<br>
+                
+                                                        
+                <br>Gross National Disposable Income (Gross NDI  + Net current Transfers from rest of the world.<br>
+                <br>Net National Disposable Income (Net NDI)  + Net current Transfers from rest of the world.<br>
+                <br>OR<br>						
+                <br>= Gross NDI – Depreciation.<br></i>
+                
+                                            
+                <br><br><b>Concept of Value Added of One Sector or One Firm<br>	</b>			
+                <i><br>1. Value output = Sales + Change in Stock. or value of output = price × qty. sold + ΔS.<br>
+                <br>2. Gross value added at market price  = Value of output – Intermediate consumption.<br>
+                <br>3. Net value added at market price  = – Depreciation.<br>
+                <br>4. Net value added at factor cost  = – Net indirect tax.<br>
+                <br><b>Note: By adding up of all the sectors, we get or Domestic Income.<br></b>
+                <br>Personal Disposable Income from National Income <br></i>
+                
+                <br><b>Private Income :</b>Private income is estimated income of factor and transfer incomes from all sources to private sector within and outside the country.<br>
+                <br><b>Personal Income :</b>It refers to income received by house hold from all sources. It includes factor income and transfer income.<br>
+                <br><b>Personal Disposable Income :</b>It is that part of Personal income which is available to the households for disposal as they like.<br>
+                <br><br><b>GDP and Welfare :<br></b>																																					
+                <br>In general GDP and Welfare are directly related with each other. A higher GDP implies that more production of goods and services. It means more availability of goods and services. But more goods and services may not necessarily indicate that the people were better off during the year. In other words, a higher GDP may not necessarily mean higher welfare of the people. There are two types of GDP:<br>
+                <br><br><b>Real GDP : </b>When the goods and services are produced by all producing units in the domestic territory of a country during an a/c. year and valued these at base year’s prices or constant price, it is called real GDP or GDP at constant prices. It changes only by change in physical output not by change price level. It is called a true indicator of economic development.<br>
+                
+                                                                                                                                                                    
+                <br><b>Nominal GDP :</b> When the goods and services are produced by all producing units in the domestic territory of a country during an a/c. year and valued these at current year’s prices or current prices, it is called Nominal GDP or GDP at current prices. It is influenced by change in both physical output and price level. It does not consider a true indicator of economic development.<br>
+                                                                        
+                <br>Price index plays the role of deflator deflating current price estimates into constant price estimates. In this way it may be called GDP deflator.<br>																																															
+                <br>Welfare mean material well being of the people. It depends on many economic factors like national income, consumption level quality of goods etc and non-economic factor like environmental pollution, law and order etc. the welfare which depends on economic factors is called economic welfare and the welfare which depends on non-economic factor is called non-economic welfare. The sum total of economic and non-economic welfare is called social welfare. Conclusion thus GDP and welfare directly related with each other but this relation is incomplete because of the following reasons.<br>
+                                                
+                <br><br><b>Limitation of percapita real GDP/GDP as a indicator of Economic welfare :<br></b>
+                <br>Non-monetary exchange<br>
+                <br>Externalities not taken into GDP but it affects welfare.<br>
+                <br>Distribution of GDP.<br>					
+                <br>All product may not contribute equally to economic welfare.<br>
+                <br>Contribution of some products may be negative.<br>	
+                <br>Inflation may give falls impression of growth of GDP.        <br>
+                
+                
+                 
+                
+                
+            </p>
+        </div>
+        <hr>
+        <div id="second">
+            <span class="ch">
+                MONEY and BANKING 
+            </span>
+            <br>
+            <span class="btn">
+                <button type="button" class="but" id="bn2" onclick="viewt()"><b>View</b></button>
+            </span>
+            <span class="btn">
+                <button type="button" class="hb" id="hide2" onclick="Hidet()"><b>Hide</b></button>
+            </span>
+            <p id="ch2">
+                <b>Money:</b> Money may be defined as anything which is generally acceptable as a medium of exchange and at the same time acts as a measure, store of value and standard of deferred payment.<br>
+                <br><br><b>Functions of Money:<br></b>
+                <br><br><i>1. Primary Functions<br></i>
+                <br>a. Medium of exchange<br>			
+                <br>b. Common measure of value or unit of value<br>
+                <br><br><i>2. Secondary Functions<br></i>
+                <br>a. Standard of deferred payment<br>
+                <br>b. Store of value<br>
+                <br>c. Transfer of value<br>
+                <br><br><i>3.Contingent Functions<br></i>
+                <br>a. Basis of credit<br>
+                <br>b. Liquidity<br>			
+                <br>c. Basis of price mechanism<br>
+                <br>d. Maximum profit to the producers<br>		
+                <br>e. Maximum satisfaction to the consumers<br>
+                <br>f. Basis of distribution of income<br>							
+                <br><br><b>Barter Exchange:</b> It implies the direct exchange of goods for goods without the use of money.<br>
+                <i><br>Difficulties involved in the Barter Exchange:<br></i>
+                <br>1. Lack of a common measure of value.<br>
+                <br>2. Lack of double coincidence of wants<br>
+                <br>3. Lacks of standard of deferred payments.<br>
+                <br>4. Lack of store of value.<br>
+                <br>5. Lack of divisibility.<br>
+                <br>6. Difficulty in exchange of services<br>													
+                <br><br><b>Supply of Money:</b> Total stock of money (currency notes, coins and demand deposit of banks) in circulation are held by the public at a given point of time.<br>				
+                <br>Supply of money does not include cash balance held by central and state govt. and stock of money held by banking system of country as they are not in actual circulation of the country.<br>
+                <br>Measures of Money Supply = Currency held by Public + Net Demand Deposits held by commercial banks<br>
+                <br><i>M1 = C + DD + OD<br>
+                                
+                <br>C = Currency and coins with the public<br>		
+                <br>DD = Demand deposits of the public with the banks<br>
+                <br>OD = Other deposits<br>
+                <br>M2 = M1+ Post office savings deposits<br>	
+                <br>M3 = M1+ Time deposits of commercial banks<br>						
+                <br>M4= M3+ Total deposits with the post office saving organisation excluding the deposits on NSC<br></i>
+                <br><br><br><b>Banks:<br>	</b>																
+                <br><br><b>Commercial Banks: </b>Commercial Banks are financial institution who accepts deposits from the public and provide loans facilities for investment with the aim of earning profit.<br>
+                <br><b>Functions of Commercial Banks<br></b>
+                <br><i>1. Primary functions:-<br></i>
+                <br>(a) Accepting deposits<br>
+                <br>(b) Advancing loans<br>		
+                <br>(c) Discounting bill of exchange.<br>
+                <br><br><i>2. Secondary functions:-<br></i>
+                <br><br><b>1. Agency function<br></b>
+                <br>(a) Transfer of fund<br>		
+                <br>(b) Collection of funds<br>						
+                <br>(c) Purchase and sale of shares and securities on behalf of the customers<br>
+                <br>(d) Collection of dividend and interest<br>
+                <br>(e) Payment of bills and insurance premium on behalf of customers<br>
+                <br>(f) Acting as executor and trustee of will<br>							
+                <br>(g) Acting as correspondent and representative of customer and provide letter of credit to the customer.<br>
+                <br><b>2. General utility function<br>	</b>		
+                <br>(a) Purchase and sell of foreign exchange.<br>
+                <br>(b) Issuance of travelers cheque.<br>			
+                <br>(c) Safe custody of valuable goods in lockers.<br>
+                <br>(d) Underwriting of securities.<br>																					
+                <br><br><b>Central Banks:</b> The central Bank is the apex institution of monetary and financial system of a country. It makes monetary policy of the country in public interest. It manages, supervises and facilitates the banking system of the country.<br>
+                                
+                <br><b>Functions of Central Banks<br></b>
+                <br>1. Bank of Issue<br>		
+                <br>2. Banker to the Government<br>
+                <br>3. Banker’s Bank and Supervisor.<br>
+                <br>4. Controller of credit.<br>
+                <br>5. Lender of last resort<br>			
+                <br>6. Custodian of foreign exchange reserves<br>				
+                <br><br><b>MONEY CREATION OR CREDIT CREATION BY COMMERCIAL BANKS<br></b>				
+                <br><b>CREDIT</b> is defined as finance made available by one party to another party on a certain rate of exchange.<br>			
+                <br>The capacity of banks to create money or credit depends on (i) Amount of primary deposits and (ii) Legal reserve ratio(LRR).<br>			
+                <br><br><b> Legal Reserve Ratio(LRR):-</b> is fixed by the central bank of a country and it is the minimum ratio of deposit legally required to be kept as cash by banks.<br>
+                <br><b>Cash Reserve Ratio(CRR):- </b>It is a part of LRR which is to be kept with the central bank.<br>		
+                <br><b>Statutory Liquidity Ratio(SLR):-</b> It is a part of LRR which is to be kept with the bank themselves.<br>																																															
+                <br>Commercial bank’s demand deposits are a part of money supply. Commercial banks lend money to the borrowers by opening demand deposit account in their names. The borrowers are free to use this money by writing cheques. According to definition demand deposits are a part of money supply. Therefore, by creating additional demand deposits bank create money. Money creation depends upon two factor: Primary deposits and Legal Reserve Ratio (LRR). Deposit Multiplier = 1/LRR Total Deposit creation = Initial deposit X 1/LRR.<br>
+                <br><br><b>Repo rate : </b>Repo rate is the rate at which the central bank of a country (Reserve Bank of India in case of India) lends money to commercial banks in the event of any shortfall of funds. Repo rate is used by monetary authorities to control inflation.<br>
+                <br><i>Description:</i> In the event of inflation, central banks increase repo rate as this acts as a disincentive for banks to borrow from the central bank. This ultimately reduces the money supply in the economy and thus helps in arresting inflation.<br>					
+                <br><br><b>Reverse repo rate : </b>Reverse repo rate is the rate at which the central bank of a country (Reserve Bank of India in case of India) borrows money from commercial banks within the country. It is a monetary policy instrument which can be used to control the money supply in the country.<br>
+                                                                                                                                                                
+                                                                                                                                                            
+                <br><i>Description:</i> An increase in the reverse repo rate will decrease the money supply and vice-versa, other things remaining constant. An increase in reverse repo rate means that commercial banks will get more incentives to park their funds with the RBI, thereby decreasing the supply of money in the market.<br>
+                
+                
+                 
+                
+                
+            </p>
+        </div>
+    </section>
+    <section id="books">
+        <span id="h">
+            Books recomended
+        </span>
+        <div id="bname">
+            <span class="bookname" id="TS">
+                Tr Jain
+            </span>
+            <span class="bookname" id="dk">
+             Sandeep Garg 
+            </span>
+            <span class="bookname" id="arya">
+                Arya publication <br> sample papers
+            </span>
+            <span class="bookname" id="sp">
+                10 years sample paper
+            </span>
+        </div>
+    </section>
+
+
+   
+    <section id="video">
+        <span id="vidh">
+            Video Section  
+        </span>
+        <div id="firsto">
+           <span class="aaa"> Ch 1 <br></span>
+            <span class="btn">
+                <button type="button" class="buto" id="vv" onclick="ViewVideo()"><b>View</b></button>
+            </span>
+            <span class="btn">
+                <button type="button" class="buto" id="hv" onclick="HideVideo()"><b>Hide</b></button>
+            </span>
+            
+            <div id="firstvideos">
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/UfTHxHxz4Qo?list=PLNQu32qLj0W0gbgPjVg9Jjk71zI-Gv36U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class ="vid"></iframe>
+<br><span class="contentv">
+National Incm Part  1
+</span> 
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/o5QFChJVWS8?list=PLNQu32qLj0W0gbgPjVg9Jjk71zI-Gv36U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class ='vid'></iframe>
+<span class="contentv">National Incm Part 2</span>
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/nMLs4W4iMjs?list=PLNQu32qLj0W0gbgPjVg9Jjk71zI-Gv36U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class='vid'></iframe>
+<span class="contentv">Nationl Incm Part 3</span>
+
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/ScPtZmGUObY?list=PLNQu32qLj0W0gbgPjVg9Jjk71zI-Gv36U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class ="vid"></iframe>
+<span class="contentv">National Incm Part 4 </span>
+<iframe width="200" height="200" src="https://www.youtube.com/embed/-3714ADacOI?list=PLNQu32qLj0W372UQjUd3XX8-XDQNaiPuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="vid"></iframe><br>
+
+
+<span class="contentv">National Incm part 5</span>
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/tRIb8ug566o?list=PLNQu32qLj0W0gbgPjVg9Jjk71zI-Gv36U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="vid"></iframe>
+              <span class="contentv">National Incm part 6</span>
+
+
+
+
+              <iframe width="200" height="200" src="https://www.youtube.com/embed/fUUGvvwI-Oo?list=PLNQu32qLj0W0gbgPjVg9Jjk71zI-Gv36U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="vid"></iframe>
+              <span class="contentv">National Incm part 7</span>
+
+              <iframe width="200" height="200" src="https://www.youtube.com/embed/IeNNH2RLPN0?list=PLNQu32qLj0W0gbgPjVg9Jjk71zI-Gv36U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <span class="contentv">National Incm part 8</span>
+
+
+
+            </div>
+        </div>
+        <hr>
+
+
+
+
+        <div id="seco">
+            <span class="aaa"> Ch 2 <br></span> 
+            <span class="btns">
+                <button type="button" class="buto" id="vs" onclick="ViewVideos()"><b>View</b></button>
+            </span>
+            <span class="btns">
+                <button type="button" class="buto" id="hs" onclick="HideVideos()"><b>Hide</b></button>
+            </span>
+            
+            <div id="firstvideos2">
+              
+
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/wkOYIwaWq08?list=PLNQu32qLj0W0gbgPjVg9Jjk71zI-Gv36U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class ="vid"></iframe>
+<br><span class="contentv">
+ Money Part  1
+</span> 
+
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/F0gsGeoU49g?list=PLNQu32qLj0W0gbgPjVg9Jjk71zI-Gv36U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class ="vid" ></iframe>
+<span class="contentv"> Money Part 2</span>
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/nwyehrvPvA8?list=PLNQu32qLj0W0gbgPjVg9Jjk71zI-Gv36U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<span class="contentv"> Money Part 3 </span>
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+   
+    <footer>
+        Designed by -- student 12 commerce 
+    </footer>
+
+    <script src="js/acccounts.js">
+
+    </script>
+</body>
+
+</html>
